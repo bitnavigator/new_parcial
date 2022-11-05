@@ -8,8 +8,7 @@ import { Planta } from './planta';
   providedIn: 'root'
 })
 export class PlantasService {
-  private urlApi = environment.apiUrl;
-
+private urlApi = environment.apiUrl;
 constructor(private http: HttpClient) { }
 
 getPlantas(): Observable<Planta[]> {
