@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { PlantasComponent } from './plantas/plantas.component'
 import { AppComponent } from './app.component';
+import { HttpClientModule } from '@angular/common/http';
 import { PlantasModule } from './plantas/plantas.module';
 
 @NgModule({
@@ -10,6 +10,7 @@ import { PlantasModule } from './plantas/plantas.module';
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     PlantasModule
   ],
   providers: [],
